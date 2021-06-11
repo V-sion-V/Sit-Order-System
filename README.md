@@ -1,2 +1,2 @@
 # Sit-Order-System
-Provide two version: GUI and NoGUI
+Provide two versions: GUI and NoGUI
