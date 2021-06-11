@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Controller.StulistController">
+    <children>
+        <TableView fx:id="studentTableView" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="905.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="index" prefWidth="46.0" text="序号" />
+                <TableColumn fx:id="id" prefWidth="112.0" text="学号" />
+                <TableColumn fx:id="name" prefWidth="117.0" text="姓名" />
+                <TableColumn fx:id="pwd" minWidth="0.0" prefWidth="112.0" text="密码" />
+                <TableColumn fx:id="credit" prefWidth="88.0" text="信誉积分" />
+                <TableColumn fx:id="getHistoryOrder" minWidth="0.0" prefWidth="120.0" resizable="false" />
+            <TableColumn fx:id="getCurrentOrder" minWidth="0.0" prefWidth="128.0" resizable="false" />
+                <TableColumn fx:id="del" maxWidth="200.0" minWidth="0.0" prefWidth="75.0" resizable="false" />
+            </columns>
+        </TableView>
+        <TextField fx:id="input_id" layoutY="551.0" prefHeight="45.0" prefWidth="196.0" promptText="学号：">
+         <font>
+            <Font size="19.0" />
+         </font></TextField>
+        <TextField fx:id="input_name" layoutX="259.0" layoutY="551.0" prefHeight="45.0" prefWidth="211.0" promptText="姓名:">
+         <font>
+            <Font size="19.0" />
+         </font></TextField>
+        <JFXButton fx:id="addStudent" buttonType="RAISED" layoutX="535.0" layoutY="551.0" onAction="#addStudent" prefHeight="45.0" prefWidth="124.0" ripplerFill="#5b9ee3" style="-fx-background-color: #f2be45;" text="添加学生" textAlignment="RIGHT" textFill="WHITE">
+            <font>
+                <Font name="KaiTi" size="22.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

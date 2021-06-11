@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SOS-GUI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SOS_GUI_jar</output-path>
+    <root id="archive" name="SOS-GUI.jar">
+      <element id="module-output" name="SOS-GUI" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jfoenix/jfoenix-8.0.10.jar" path-in-jar="/" />
+      <element id="library" level="project" name="jfoenix" />
+    </root>
+  </artifact>
+</component>

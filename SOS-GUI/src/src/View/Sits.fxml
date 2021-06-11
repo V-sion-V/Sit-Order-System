@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Controller.SitsController">
+    <children>
+        <TableView fx:id="sitTable" editable="true" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="800.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+
+        </TableView>
+        <TextField fx:id="input_row" layoutY="552.0" prefHeight="44.0" prefWidth="123.0" promptText="行号：" />
+        <TextField fx:id="input_col" layoutX="133.0" layoutY="552.0" prefHeight="44.0" prefWidth="123.0" promptText="列号：" />
+        <JFXButton fx:id="currentOrder" buttonType="RAISED" layoutX="275.0" layoutY="552.0" onAction="#seeCurrentOrder" prefHeight="44.0" prefWidth="156.0" ripplerFill="#5b9ee3" style="-fx-background-color: #2edfa3;" text="查看当前预约" textAlignment="RIGHT" textFill="WHITE">
+            <font>
+                <Font name="KaiTi" size="21.0" />
+            </font>
+        </JFXButton>
+      <Label fx:id="top" alignment="CENTER" layoutX="-13.0" layoutY="-8.0" prefHeight="44.0" prefWidth="123.0" textFill="#0596ff">
+         <font>
+            <Font name="KaiTi" size="26.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="historyOrder" buttonType="RAISED" layoutX="449.0" layoutY="552.0" onAction="#seeHistoryOrder" prefHeight="44.0" prefWidth="156.0" ripplerFill="#5b9ee3" style="-fx-background-color: #ff4777;" text="查看历史预约" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="KaiTi" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="621.0" layoutY="552.0" onAction="#retRoom" prefHeight="44.0" prefWidth="156.0" ripplerFill="#5b9ee3" style="-fx-background-color: #88ada6;" text="返回教室列表" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="KaiTi" size="21.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

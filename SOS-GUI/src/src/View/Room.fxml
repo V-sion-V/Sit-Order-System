@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Controller.RoomsController">
+   <children>
+      <TableView fx:id="roomtable" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="800.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="cid" prefWidth="101.0" text="教室号" />
+          <TableColumn fx:id="name" minWidth="0.0" prefWidth="130.0" text="教室名" />
+            <TableColumn fx:id="row" prefWidth="113.0" text="行数" />
+            <TableColumn fx:id="col" prefWidth="109.0" text="列数" />
+            <TableColumn fx:id="avl" minWidth="0.0" prefWidth="126.0" text="是否可用" />
+            <TableColumn fx:id="getsit" minWidth="0.0" prefWidth="139.0" resizable="false" />
+            <TableColumn fx:id="del" maxWidth="219.0" minWidth="0.0" resizable="false" />
+        </columns>
+      </TableView>
+      <TextField fx:id="input_id" layoutY="555.0" prefHeight="41.0" prefWidth="104.0" promptText="教室号：">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="input_name" layoutX="118.0" layoutY="555.0" prefHeight="41.0" prefWidth="195.0" promptText="教室名:">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="input_row" layoutX="329.0" layoutY="555.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0" prefWidth="119.0" promptText="行数：">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="input_col" layoutX="466.0" layoutY="555.0" prefHeight="41.0" prefWidth="119.0" promptText="列数：">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <JFXButton fx:id="addRoom" buttonType="RAISED" layoutX="624.0" layoutY="551.0" onAction="#addClassroom" prefHeight="49.0" prefWidth="139.0" ripplerFill="#5b9ee3" style="-fx-background-color: #f09199;" text="添加教室" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="KaiTi" size="23.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

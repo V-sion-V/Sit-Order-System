@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onKeyPressed="#stu_ch_enter" prefHeight="312.0" prefWidth="429.0" style="-fx-background-color: #edd1d8;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="src.Controller.FormController">
+    <children>
+        <TextField fx:id="stu_ch_opwd" layoutX="153.0" layoutY="77.0" prefHeight="28.0" prefWidth="194.0" />
+        <Label layoutX="66.0" layoutY="77.0" prefHeight="28.0" prefWidth="86.0" text="原密码：">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="stu_ch_npwd" layoutX="153.0" layoutY="137.0" prefHeight="28.0" prefWidth="194.0" />
+        <Label layoutX="66.0" layoutY="137.0" prefHeight="28.0" prefWidth="86.0" text="新密码：">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="stu_ch_conf" buttonType="RAISED" layoutX="110.0" layoutY="220.0" onAction="#handle_stu_ch_conf" prefHeight="39.0" prefWidth="86.0" style="-fx-background-color: #89c3eb;" text="确认" textFill="WHITE">
+            <font>
+                <Font name="Segoe Script" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="stu_ch_canc" buttonType="RAISED" layoutX="241.0" layoutY="220.0" onAction="#canc_ch" prefHeight="39.0" prefWidth="86.0" style="-fx-background-color: #89c3eb;" text="取消" textFill="WHITE">
+            <font>
+                <Font name="Segoe Script" size="18.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

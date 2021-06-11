@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onKeyPressed="#conf_enter" prefHeight="322.0" prefWidth="413.0" style="-fx-background-color: #eedeb0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Controller.InfoController">
+   <children>
+      <Label alignment="CENTER" layoutX="111.0" layoutY="53.0" prefHeight="54.0" prefWidth="72.0" text="密码：" textFill="#791919">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="ad_pwd" alignment="CENTER" layoutX="196.0" layoutY="57.0" prefHeight="46.0" prefWidth="129.0" textFill="#791919">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="65.0" layoutY="115.0" prefHeight="54.0" prefWidth="118.0" text="学生总数：" textFill="#791919">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="ad_stus" alignment="CENTER" layoutX="196.0" layoutY="119.0" prefHeight="46.0" prefWidth="129.0" textFill="#791919">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="65.0" layoutY="176.0" prefHeight="54.0" prefWidth="118.0" text="教室总数：" textFill="#791919">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="ad_classrooms" alignment="CENTER" layoutX="196.0" layoutY="180.0" prefHeight="46.0" prefWidth="129.0" textFill="#791919">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="conf" layoutX="159.0" layoutY="249.0" onAction="#conf" prefHeight="46.0" prefWidth="91.0" ripplerFill="#5b9ee3" style="-fx-background-color: #b0a4e3;" text="确认" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

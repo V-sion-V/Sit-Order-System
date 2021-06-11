@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Controller.OrderListController">
+    <children>
+        <Label fx:id="top" layoutY="-8.0" prefHeight="44.0" prefWidth="156.0" textAlignment="CENTER" textFill="#0596ff">
+            <font>
+                <Font name="KaiTi" size="22.0" />
+            </font>
+        </Label>
+        <TableView fx:id="historyorder" editable="true" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="800.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+            <columns>
+                <TableColumn fx:id="index" prefWidth="66.0" text="序号" />
+                <TableColumn fx:id="id" prefWidth="135.0" text="学生学号" />
+                <TableColumn fx:id="name" prefWidth="138.0" text="学生姓名" />
+                <TableColumn fx:id="start" prefWidth="160.0" text="开始时间" />
+                <TableColumn fx:id="end" minWidth="0.0" prefWidth="146.0" text="结束时间" />
+                <TableColumn fx:id="status" prefWidth="151.0" text="结束状态" />
+            </columns>
+        </TableView>
+        <JFXButton fx:id="back" buttonType="RAISED" layoutX="621.0" layoutY="563.0" onAction="#retBackview" prefHeight="37.0" prefWidth="156.0" ripplerFill="#5b9ee3" style="-fx-background-color: #88ada6;" text="返回座位列表" textAlignment="RIGHT" textFill="WHITE">
+            <font>
+                <Font name="KaiTi" size="20.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

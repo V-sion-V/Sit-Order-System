@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Controller.RoomsController">
+    <children>
+        <TableView fx:id="roomtable" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="800.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="cid" prefWidth="140.0" text="教室号" />
+                <TableColumn fx:id="name" minWidth="0.0" prefWidth="141.0" text="教室名" />
+                <TableColumn fx:id="row" minWidth="5.0" prefWidth="133.0" text="行数" />
+                <TableColumn fx:id="col" prefWidth="129.0" text="列数" />
+                <TableColumn fx:id="avl" minWidth="0.0" prefWidth="124.0" text="是否可用" />
+                <TableColumn fx:id="getsit" minWidth="0.0" prefWidth="129.0" resizable="false" />
+            </columns>
+        </TableView>
+        <TextField fx:id="start" layoutX="291.0" layoutY="570.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="121.0" promptText="开始时间：" />
+        <TextField fx:id="end" layoutX="431.0" layoutY="569.0" prefHeight="32.0" prefWidth="122.0" promptText="结束时间：" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="564.0" prefHeight="43.0" prefWidth="110.0" text="预约时间：" textFill="#4c8dae">
+         <font>
+            <Font name="KaiTi" size="19.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="today" checkedColor="#b35c44" layoutX="162.0" layoutY="576.0" prefHeight="18.0" prefWidth="36.0" text=" " />
+      <Label alignment="CENTER" layoutX="117.0" layoutY="570.0" prefHeight="32.0" prefWidth="38.0" text="今天" textFill="#4c8dae">
+        <font>
+            <Font name="KaiTi" size="19.0" />
+        </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="198.0" layoutY="569.0" prefHeight="32.0" prefWidth="38.0" text="明天" textFill="#4c8dae">
+         <font>
+            <Font name="KaiTi" size="19.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="tomorrow" checkedColor="#b35c44" layoutX="243.0" layoutY="576.0" prefHeight="18.0" prefWidth="16.0" text=" " />
+    </children>
+</AnchorPane>
